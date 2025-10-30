@@ -1,0 +1,111 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.parent {
+  background-color: #f0f8ff;
+  border: 2px solid #007acc;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.parent::before {
+  content: "Parent Component";
+  display: block;
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Styles to highlight wrapper divs and fragments */
+.wrapper-div {
+  border: 2px dashed #ff6b6b !important;
+  background-color: #ffe6e6 !important;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+  position: relative;
+}
+
+.wrapper-div::before {
+  content: "Unnecessary Wrapper <div>";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #ff6b6b;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.fragment-content {
+  border: 2px dashed #4ecdc4 !important;
+  background-color: #e6fffe !important;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+  position: relative;
+}
+
+.fragment-content::before {
+  content: "Fragment (no wrapper)";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: #4ecdc4;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Book styles */
+.bookshelf {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.book-item {
+  border-left: 4px solid #007acc;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: white;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-title {
+  margin: 0 0 8px 0;
+  color: #007acc;
+  font-size: 1.3rem;
+}
+
+.book-author {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+  font-size: 1.1rem;
+}
